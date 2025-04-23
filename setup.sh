@@ -1,6 +1,9 @@
-TEMPLATE_FILES=(.cline .github .hooks modules .clinefiles .roomodes deno.json deno.lock)
+# 必ず親ディレクトリから実行して展開する
+# > ./mizchi/setup.sh
+
+TEMPLATE_FILES=(.cline .github .hooks modules .clinerules .roomodes deno.json deno.lock)
 
 for file in ${TEMPLATE_FILES[@]}
 do
-    ln -snfv ./$file ../$file
+    ln -snfv "$(pwd)/mizchi/$file" ./$file
 done
