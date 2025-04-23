@@ -27,3 +27,6 @@ node_modules
 .env
 .env.local
 .dev.vars
+
+# System
+.DS_Store
