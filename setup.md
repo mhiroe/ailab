@@ -18,3 +18,14 @@ m@c  ./mizchi/setup.sh
 
 # 他のプロジェクトで更新した内容を取り込む
 > git subtree pull --prefix=mizchi  https://github.com/mhiroe/ailab.git main --squash
+
+
+## 本家のfetch
+
+設定
+```
+git remote add upstream https://github.com/mizchi/ailab.git
+git fetch
+git branch -a
+```
+- 
